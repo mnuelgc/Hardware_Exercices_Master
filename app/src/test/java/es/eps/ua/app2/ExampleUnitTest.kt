@@ -1,4 +1,4 @@
-package es.eps.ua.app1
+package es.eps.ua.app2
 
 import org.junit.Test
 

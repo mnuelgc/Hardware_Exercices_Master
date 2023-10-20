@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    namespace = "es.eps.ua.app1"
+    namespace = "es.eps.ua.app2"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "es.eps.ua.app1"
-        minSdk = 21
+        applicationId = "es.eps.ua.app2"
+        minSdk = 24
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -32,6 +32,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+    buildFeatures{
+        viewBinding = true
     }
 }
 

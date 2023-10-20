@@ -1,4 +1,4 @@
-package es.eps.ua.app1
+package es.eps.ua.app2
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("es.eps.ua.app1", appContext.packageName)
+        assertEquals("es.eps.ua.app2", appContext.packageName)
     }
 }
