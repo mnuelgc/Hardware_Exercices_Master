@@ -18,9 +18,9 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id ="@+id/specs_layer"
+        android:id ="@+id/connection_text_layer"
 
-        android:text="Mobile Specs:"
+        android:text="Estado  de los Datos:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -29,15 +29,266 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id ="@+id/specs_text"
+        android:id ="@+id/connection_text"
 
         android:text="Specs "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/connection_text_layer"
+        app:layout_constraintStart_toEndOf="@+id/connection_text_layer" />
+
+    <TextView
+        android:id ="@+id/connection_type_layer"
+
+        android:text="Mobile Specs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/connection_text_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/connection_type_text"
+
+        android:text="Specs "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/connection_text_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id ="@+id/Imei_layer"
+
+        android:text="Mobile Specs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginStart="30dp"
-        app:layout_constraintTop_toBottomOf="@id/specs_layer"
+        app:layout_constraintTop_toBottomOf="@id/connection_type_layer"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/Imei_text"
+
+        android:text="Specs "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/connection_type_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/physic_operator_layer"
+
+        android:text="Mobile Specs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/Imei_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/physic_operator_text"
+
+        android:text="Specs "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/Imei_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/virtual_operator_layer"
+
+        android:text="Mobile Specs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/physic_operator_text"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/virtual_operator_text"
+
+        android:text="Specs "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/physic_operator_text"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/idSubscriptor_layer"
+
+        android:text="Mobile Specs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/virtual_operator_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/idSubsriptor_text"
+
+        android:text="Specs "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/virtual_operator_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/serial_number_layer"
+
+        android:text="Mobile Specs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/idSubscriptor_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/serial_number_text"
+
+        android:text="Specs "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/idSubscriptor_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/ISO_net_code_layer"
+
+        android:text="Mobile Specs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/serial_number_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/ISO_net_code_text"
+
+        android:text="Specs "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/serial_number_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/ISO_country_code_layer"
+
+        android:text="Mobile Specs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/ISO_net_code_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/ISO_country_code_text"
+
+        android:text="Specs "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/ISO_net_code_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/software_version_layer"
+
+        android:text="Mobile Specs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/ISO_country_code_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/software_version_text"
+
+        android:text="Specs "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/ISO_country_code_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/answer_number_layer"
+
+        android:text="Mobile Specs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/software_version_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/answer_number_text"
+
+        android:text="Specs "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/software_version_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/mobile_net_layer"
+
+        android:text="Mobile Specs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/answer_number_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/mobile_net_text"
+
+        android:text="Specs "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/answer_number_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/roaming_layer"
+
+        android:text="Mobile Specs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/mobile_net_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/roaming_text"
+
+        android:text="Specs "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/mobile_net_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 
 
