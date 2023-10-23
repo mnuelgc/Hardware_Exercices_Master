@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "es.eps.ua.app2"
-        minSdk = 24
+        minSdk = 21
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
