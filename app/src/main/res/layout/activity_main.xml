@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <Button
+        android:id="@+id/wifi_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Wifi Info"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id ="@+id/ssid_layer"
+
+        android:text="SSID:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/wifi_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/ssid_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/ssid_layer"
+        app:layout_constraintStart_toEndOf="@id/ssid_layer" />
+
+    <TextView
+        android:id ="@+id/bssid_layer"
+
+        android:text="BSSID:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/ssid_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+
+        android:id ="@+id/bssid_text"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/bssid_layer"
+        app:layout_constraintStart_toEndOf="@id/bssid_layer" />
+
+    <TextView
+        android:id ="@+id/wifi_speed_layer"
+
+        android:text="WiFi speed:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/bssid_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/wifi_speed_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/wifi_speed_layer"
+        app:layout_constraintStart_toEndOf="@id/wifi_speed_layer" />
+
+    <TextView
+        android:id ="@+id/wifi_strength_layer"
+
+        android:text="Wifi Strenght:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/wifi_speed_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/wifi_strength_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/wifi_strength_layer"
+        app:layout_constraintStart_toEndOf="@id/wifi_strength_layer" />
+
+    <TextView
+        android:id ="@+id/encryption_layer"
+
+        android:text="Encryption:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/wifi_strength_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/encryption_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/encryption_layer"
+        app:layout_constraintStart_toEndOf="@id/encryption_layer" />
+
+    <TextView
+        android:id ="@+id/frequency_layer"
+
+        android:text="Frequency:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/encryption_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/frequency_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/frequency_layer"
+        app:layout_constraintStart_toEndOf="@id/frequency_layer" />
+
+    <TextView
+        android:id ="@+id/channel_layer"
+
+        android:text="Channel:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/frequency_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/channel_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/channel_layer"
+        app:layout_constraintStart_toEndOf="@id/channel_layer" />
+
+
+    <TextView
+        android:id ="@+id/ip_layer"
+
+        android:text="IP:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/channel_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/ip_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/ip_layer"
+        app:layout_constraintStart_toEndOf="@id/ip_layer" />
+
+    <TextView
+        android:id ="@+id/netmask_layer"
+
+        android:text="NetMask:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/ip_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/netmask_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/netmask_layer"
+        app:layout_constraintStart_toEndOf="@id/netmask_layer" />
+
+
+    <TextView
+        android:id ="@+id/gateway_layer"
+
+        android:text="Gateway:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/netmask_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/gateway_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/gateway_layer"
+        app:layout_constraintStart_toEndOf="@id/gateway_layer" />
+
+    <TextView
+        android:id ="@+id/dhcp_server_layer"
+
+        android:text="DHCP-Server:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/gateway_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/dhcp_server_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/dhcp_server_layer"
+        app:layout_constraintStart_toEndOf="@id/dhcp_server_layer" />
+
+    <TextView
+        android:id ="@+id/dns1_layer"
+
+        android:text="DNS1:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/dhcp_server_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/dns1_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/dns1_layer"
+        app:layout_constraintStart_toEndOf="@id/dns1_layer" />
+
+
+    <TextView
+        android:id ="@+id/dns2_layer"
+
+        android:text="DNS2:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/dns1_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/dns2_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/dns2_layer"
+        app:layout_constraintStart_toEndOf="@id/dns2_layer" />
+
+
+    <TextView
+        android:id ="@+id/dhcp_lease_layer"
+
+        android:text="DHCP lease:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/dns2_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/dhcp_lease_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/dhcp_lease_layer"
+        app:layout_constraintStart_toEndOf="@id/dhcp_lease_layer" />
+
+
+    <TextView
+        android:id ="@+id/externalIp_layer"
+
+        android:text="External IP:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/dhcp_lease_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/externalIP_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/externalIp_layer"
+        app:layout_constraintStart_toEndOf="@id/externalIp_layer" />
+
+    <TextView
+        android:id ="@+id/hidden_layer"
+
+        android:text="Hidden ?:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@id/externalIp_layer"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id ="@+id/hidden_text"
+
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="@id/hidden_layer"
+        app:layout_constraintStart_toEndOf="@id/hidden_layer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
